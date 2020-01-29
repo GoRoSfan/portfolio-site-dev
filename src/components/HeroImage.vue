@@ -4,7 +4,7 @@
             <h1 class="heading">
                 Sinilo Oleg (Олег Синило)
             </h1>
-            <p>Full Stack Developer</p>
+            <p>Full Stack Developer (Full Stack Разработчик)</p>
         </div>
     </section>
 </template>
@@ -20,7 +20,6 @@
         position: relative;
         padding-top: 200px;
         height: 798px;
-        background-image: url("../assets/img/bg-html.png");
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 48px;
