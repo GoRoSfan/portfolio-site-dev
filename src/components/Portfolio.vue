@@ -8,7 +8,7 @@
                         <img src="../assets/files/portfolio_centre.png" width="1000" alt="Site of Educational Center">
                     </figure>
                     <h3>Site of Educational Center</h3>
-                    <a href="#" class="button">Open (Открыть)</a>
+                    <a href="#" class="button">Open</a>
                 </li>
             </ul>
         </div>

@@ -49,6 +49,7 @@
         position: absolute;
         top: 100%;
         left: 0;
+        z-index: 100;
 
         transition: 0.5s ease-in-out;
     }
