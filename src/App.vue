@@ -4,6 +4,7 @@
             <div id="content">
                 <HeroImage></HeroImage>
                 <Intro></Intro>
+                <Abilities></Abilities>
                 <Portfolio></Portfolio>
             </div>
         </MainTemplate>
@@ -15,6 +16,7 @@
     import HeroImage from './components/HeroImage'
     import Intro from './components/Intro'
     import Portfolio from './components/Portfolio'
+    import Abilities from '@/components/Abilities'
 
     export default {
         name: 'app',
@@ -22,39 +24,45 @@
             MainTemplate,
             HeroImage,
             Intro,
-            Portfolio
+            Portfolio,
+            Abilities
         }
     }
 </script>
 
 <style>
+    html {
+        font-size: 18px;
+    }
+
     body {
         position: relative;
-        margin: 0;
-        min-width: 1408px;
+        margin: 30px 0 0;
+        min-width: 90vw;
         font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-        font-size: 16px;
-        line-height: 32px;
+        line-height: 1.5rem;
         color: #f2f2f2;
         background-color: #141530;
         background-image: url("assets/img/pattern-lines-hero.svg");
         background-position: center;
     }
 
+    li {
+        list-style: none;
+    }
+
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: left;
-        margin-top: 30px;
     }
 
     .button {
         margin: 0;
-        padding: 8px 24px;
+        padding: 0.33rem 1.1rem;
         display: inline-block;
         vertical-align: baseline;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 500;
         letter-spacing: 1px;
         text-decoration: none;
@@ -75,5 +83,17 @@
     .button:active {
         background-color: #b69e4b;
         box-shadow: none;
+    }
+
+    @media (max-width: 1180px) {
+        html {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        html {
+            font-size: 13px;
+        }
     }
 </style>
