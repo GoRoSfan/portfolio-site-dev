@@ -3,8 +3,8 @@
         <div :style="{backgroundImage: 'url(' + desireImage + ')'}"></div>
         <h4>{{desireTitle}}</h4>
         <ul>
-            <Skill v-for="skill in skillList"
-                   :key="skill"
+            <Skill v-for="(skill, index) in skillList"
+                   :key="index"
                    :skill-title="skill.title"
                    :skill-image="skill.image"
             />
@@ -31,14 +31,18 @@
         justify-content: center;
         align-items: center;
 
-        width: 200px;
-        margin-right: 10px;
-        margin-bottom: 20px;
+        max-width: 22rem;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    li:last-child {
+        margin-right: 0;
     }
 
     div {
-        width: 100px;
-        height: 100px;
+        width: 11rem;
+        height: 11rem;
 
         border-radius: 50%;
         border: #000000 solid 2px;
@@ -62,6 +66,7 @@
     
     h4{
         text-align: center;
+        font-size: 1.5rem;
     }
 
     .custom-desires ul {
@@ -70,7 +75,13 @@
         justify-content: space-around;
         align-items: baseline;
 
-        box-sizing: content-box;
-        width: 100%;
+        width: 90%;
+    }
+
+
+    @media (max-width: 650px) {
+        li {
+            margin-right: 0;
+        }
     }
 </style>

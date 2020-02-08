@@ -6,16 +6,16 @@
                 <dl>
                     <dt>Phone:</dt>
                     <dd>
-                        <a href="tel:+380993907922" class="header-phone">+38 099 390 79 22</a>
+                        <a href="tel:+380993907922" class="phone">+38 099 390 79 22</a>
                     </dd>
 
                     <dt>E-mail:</dt>
                     <dd>
-                        <a href="mailto:olegsinilo126@gmail.com" class="header-email">olegsinilo126@gmail.com</a>
+                        <a href="mailto:olegsinilo126@gmail.com" class="email">olegsinilo126@gmail.com</a>
                     </dd>
 
                     <dt>Telegram:</dt>
-                    <dd><a href="https://t.me/Sinilo_Oleg" class="header-telegram">Oleg OLEG oleg</a></dd>
+                    <dd><a href="https://t.me/Sinilo_Oleg" class="telegram">Oleg OLEG oleg</a></dd>
                 </dl>
             </div>
         </div>
@@ -25,7 +25,7 @@
 <script>
     export default {
         name: "Menu",
-        data: () => {
+        data() {
             return {
                 visible_menu: false,
             }
@@ -36,6 +36,8 @@
 <style scoped>
     h3{
         margin: 0;
+
+        font-size: 1.5rem;
     }
 
     .menu-item {

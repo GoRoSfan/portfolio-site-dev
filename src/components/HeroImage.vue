@@ -18,11 +18,8 @@
 <style scoped>
     .hero-image {
         position: relative;
-        padding-top: 200px;
-        height: 798px;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: 48px;
+        padding-top: 12rem;
+        height: 100vh;
     }
 
     .hero-image .container {
@@ -33,9 +30,9 @@
     .hero-image::before {
         position: absolute;
         content: "";
-        top: 24px;
-        left: calc(50vw - 32px);
-        width: 800px;
+        top: 3rem;
+        left: 35vw;
+        width: 63.5vw;
         height: 800px;
         background-image: url("../assets/img/hero-image.svg");
         background-repeat: no-repeat;
@@ -44,7 +41,7 @@
     .hero-image::after {
         position: absolute;
         content: "";
-        height: 200px;
+        height: 10rem;
         width: 100%;
         bottom: 0;
         background-color: #0b0c23;
@@ -56,22 +53,21 @@
 
     .heading {
         z-index: 1;
-        order: 2;
-        margin: 0 0 0 -10px;
-        width: 815px;
-        font-size: 96px;
-        line-height: 112px;
+        margin: 0;
+        max-width: 55vw;
+        font-size: 4rem;
+        line-height: 6rem;
         font-weight: 500;
     }
 
     .hero-image p {
         z-index: 1;
-        order: 1;
+
+        max-width: 45vw;
         margin: 0;
-        padding: 32px 0;
-        padding-bottom: 16px;
-        font-size: 32px;
-        line-height: 48px;
+        padding: 2rem 0 1rem;
+        font-size: 2rem;
+        line-height: 4rem;
         color: #f9dd79;
     }
 </style>

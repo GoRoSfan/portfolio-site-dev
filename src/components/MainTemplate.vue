@@ -8,7 +8,7 @@
         <slot id="content"></slot>
         <footer class="page-footer">
             <div class="container">
-                Буду рад Вам помочь
+                <span>Буду рад Вам помочь  </span>
                 <a class="email" href="mailto:olegsinilo126@gmail.com">olegsinilo126@gmail.com</a>
                 <a class="phone" href="tel:+380993907922">+38 099 390 79 22</a>
             </div>
@@ -29,7 +29,7 @@
 
 <style>
     .container {
-        max-width: 1408px;
+        max-width: calc(90vw - 20px);
         margin: 0 auto;
         padding: 0 16px;
     }
@@ -37,14 +37,17 @@
     .page-header a,
     .page-footer a {
         position: relative;
-        margin-right: 64px;
+
+        margin-right: 3.5rem;
         padding-bottom: 10px;
         padding-top: 9px;
+
         font-weight: 500;
+        color: inherit;
         text-decoration: none;
+
         background-repeat: no-repeat;
         background-position: left;
-        color: inherit;
     }
 
     .page-header a:focus,
@@ -101,11 +104,11 @@
 <style scoped>
     .page-header {
         margin: 0;
-        padding: 20px 0;
+        padding: 1.2rem 0;
     }
 
     .page-footer {
-        padding: 40px 0;
+        padding: 2.2rem 0;
         background-color: #212349;
     }
 </style>

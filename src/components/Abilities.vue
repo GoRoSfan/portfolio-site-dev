@@ -1,9 +1,9 @@
 <template>
     <section class="abilities">
-        <h3>I can help with (Чем могу быть полезен):</h3>
+        <h3 class="subheading">I can help with (Чем могу быть полезен)</h3>
         <ul class="custom-desires">
-            <Desire v-for="one_desire in desire_list"
-                    :key="one_desire.title"
+            <Desire v-for="(one_desire, index) in desire_list"
+                    :key="index"
                     :desire-title="one_desire.title"
                     :desire-image="one_desire.image"
                     :skill-list="one_desire.skill_list"
@@ -73,16 +73,17 @@
 </script>
 
 <style scoped>
-    .abilities h3 {
-        margin: 0;
-        padding-bottom: 16px;
+    .abilities {
+        padding: 2rem;
     }
 
     .custom-desires {
         display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: space-around;
         align-items: flex-start;
+
+        padding: 0;
 
         list-style: none;
     }

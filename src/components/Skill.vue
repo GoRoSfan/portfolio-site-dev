@@ -15,14 +15,6 @@
 </script>
 
 <style scoped>
-    li {
-        margin-right: 30px;
-    }
-
-    li:last-child {
-        margin-right: 0;
-    }
-
     figure {
         display: flex;
         flex-direction: column;
@@ -32,6 +24,11 @@
     }
 
     img {
-        width: 50px;
+        width: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    figcaption {
+        font-weight: 700;
     }
 </style>

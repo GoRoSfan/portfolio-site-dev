@@ -38,23 +38,36 @@
     body {
         position: relative;
         margin: 30px 0 0;
-        min-width: 90vw;
+        min-width: 300px;
         font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-        line-height: 1.5rem;
+        line-height: 2rem;
         color: #f2f2f2;
         background-color: #141530;
         background-image: url("assets/img/pattern-lines-hero.svg");
         background-position: center;
     }
 
-    li {
+    ul {
         list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     #app {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: left;
+    }
+
+    .subheading {
+        margin: 0 0 6rem;
+        padding: 0;
+
+        text-align: center;
+        font-size: 4rem;
+        line-height: 5rem;
+        font-weight: 500;
+        color: #f9dd79;
     }
 
     .button {
@@ -87,13 +100,13 @@
 
     @media (max-width: 1180px) {
         html {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
 
     @media (max-width: 600px) {
         html {
-            font-size: 13px;
+            font-size: 11px;
         }
     }
 </style>
