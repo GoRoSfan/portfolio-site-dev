@@ -27,7 +27,7 @@
 <style scoped>
     li {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -71,7 +71,7 @@
 
     .custom-desires ul {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-around;
         align-items: baseline;
 
