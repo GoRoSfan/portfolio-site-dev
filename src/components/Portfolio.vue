@@ -3,69 +3,43 @@
         <div class="container">
             <h2 class="subheading">My projects (мои работы)</h2>
             <ul class="projects">
-                <li>
-                    <figure class="project-image">
-                        <img src="../assets/files/portfolio_centre.png" width="1000" alt="Site of Educational Center">
-                    </figure>
-                    <h3>Site of Educational Center</h3>
-                    <a href="#" class="button">Open</a>
-                </li>
+                <Project v-for="(project, index) in projects"
+                         :key="index"
+                         :project-title="project.title"
+                         :project-image="project.image"
+                         :project-link="project.link_to"
+                />
             </ul>
         </div>
     </section>
 </template>
 
 <script>
+    import Project from './Project';
+
     export default {
-        name: "Portfolio"
+        name: "Portfolio",
+        components: {
+            Project
+        },
+
+        data() {
+            return {
+                projects: [
+                    {
+                        title: 'Site of Educational Center',
+                        image: require('@/assets/files/portfolio_centre.png'),
+                        link_to: 'https://keecenter.herokuapp.com/news',
+                    }
+                ]
+            }
+        }
+
     }
 </script>
 
 <style scoped>
     .portfolio {
-        margin: 0;
-        padding-bottom: 160px;
-
-        background-color: #141530;
-        background-image: url("../assets/img/pattern-lines.svg");
-        background-repeat: repeat-y;
-        background-position-x: center;
-    }
-
-    .portfolio h3 {
-        margin: 0 0 16px;
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 500;
-    }
-
-    .projects {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .projects li {
-        position: relative;
-        min-height: 256px;
-        margin: 0 0 100px;
-        padding-left: 528px;
-    }
-
-    .project-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-    }
-
-    .project-image img {
-        width: 448px;
-        height: 256px;
-        object-fit: cover;
-    }
-
-    .projects p {
-        margin: 0 0 32px;
+        margin: 0 0 8rem;
     }
 </style>

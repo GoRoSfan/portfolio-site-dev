@@ -8,9 +8,18 @@
         <slot id="content"></slot>
         <footer class="page-footer">
             <div class="container">
-                <span>Буду рад Вам помочь  </span>
-                <a class="email" href="mailto:olegsinilo126@gmail.com">olegsinilo126@gmail.com</a>
-                <a class="phone" href="tel:+380993907922">+38 099 390 79 22</a>
+                <span>Буду рад Вам помочь. Мои контакти:</span>
+                <ul>
+                    <li>
+                        <a class="email" href="mailto:olegsinilo126@gmail.com">olegsinilo126@gmail.com</a>
+                    </li>
+                    <li>
+                        <a class="phone" href="tel:+380993907922">+38 099 390 79 22</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/Sinilo_Oleg" class="telegram">Oleg OLEG oleg</a>
+                    </li>
+                </ul>
             </div>
         </footer>
     </div>
@@ -84,19 +93,15 @@
         background-image: url("../assets/img/icon-email.svg");
     }
 
-    .email:focus,
-    .email:hover {
-        background-image: url("../assets/img/icon-email-alt.svg");
-    }
-
     .phone {
         padding-left: 21px;
         background-image: url("../assets/img/icon-phone.svg");
     }
 
-    .phone:focus,
-    .phone:hover {
-        background-image: url("../assets/img/icon-phone-alt.svg");
+    .telegram {
+        padding-left: 21px;
+        background-image: url("../assets/img/icon-telegram.png");
+        background-size: 15px 16px;
     }
 
 </style>
@@ -104,11 +109,14 @@
 <style scoped>
     .page-header {
         margin: 0;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
+        font-size: 1.2rem;
     }
 
     .page-footer {
-        padding: 2.2rem 0;
+        padding: 2rem 0;
         background-color: #212349;
+        font-size: 1.2rem;
+        line-height: 3rem;
     }
 </style>

@@ -64,20 +64,20 @@
         padding: 0;
 
         text-align: center;
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3.6rem;
+        line-height: 4.5rem;
         font-weight: 500;
         color: #f9dd79;
     }
 
     .button {
         margin: 0;
-        padding: 0.33rem 1.1rem;
-        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        display: block;
         vertical-align: baseline;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 500;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-decoration: none;
         text-transform: uppercase;
         color: #0b0c23;
