@@ -1,6 +1,6 @@
 <template>
     <section class="abilities">
-        <h3 class="subheading">I can help with (Чем могу быть полезен)</h3>
+        <h3 class="subheading">{{ 'AbilitiesTopic' | translateElement($lang) }}</h3>
         <ul class="custom-desires">
             <Desire v-for="(one_desire, index) in desire_list"
                     :key="index"
@@ -25,7 +25,7 @@
             return {
                 desire_list: [
                     {
-                        title: 'Site layout (Верстка сайта)',
+                        title: 'AbilitySiteLayout',
                         image: require('@/assets/img/preferences-desktop-wallpaper.svg'),
                         skill_list: [
                             {
@@ -39,7 +39,7 @@
                         ]
                     },
                     {
-                        title: 'Develop site (Разработка сайта)',
+                        title: 'AbilityDevelopSite',
                         image: require('@/assets/img/www.svg'),
                         skill_list: [
                             {
@@ -53,7 +53,7 @@
                         ]
                     },
                     {
-                        title: 'Help with Site logic (Помощь с логикой сайта)',
+                        title: 'AbilitySiteLogic',
                         image: require('@/assets/img/union.svg'),
                         skill_list: [
                             {

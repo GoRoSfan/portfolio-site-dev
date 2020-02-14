@@ -1,7 +1,7 @@
 <template>
     <li>
         <div :style="{backgroundImage: 'url(' + desireImage + ')'}"></div>
-        <h4>{{desireTitle}}</h4>
+        <h4>{{desireTitle | translateElement($lang)}}</h4>
         <ul>
             <Skill v-for="(skill, index) in skillList"
                    :key="index"
@@ -25,13 +25,13 @@
 </script>
 
 <style scoped>
-    li {
+    .custom-desires > li {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        max-width: 22rem;
+        width: 22rem;
         margin-right: 4rem;
         margin-bottom: 4rem;
     }
@@ -80,7 +80,7 @@
 
 
     @media (max-width: 650px) {
-        li {
+        .custom-desires > li {
             margin-right: 0;
         }
     }

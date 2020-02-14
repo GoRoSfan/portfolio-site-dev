@@ -1,0 +1,17 @@
+{
+  "MenuContacts": "Контакты",
+  "MenuPhone": "Телефон",
+  "FooterIntro": "Буду рад Вам помочь. Мои контакти:",
+  "HeroImageMyName": "Олег Синило",
+  "HeroImageMyProfession": "Full Stack Разработчик",
+  "IntroTopic": "Давайте познакомимся",
+  "IntroSubTopic": "Пара слов о себе",
+  "IntroAuth1": "Я веб-разработчик. Программирование очень взволновало меня.",
+  "IntroAuth2": "Потому что компьютерные программы могут перевернуть весь мир (и я хочу разработать такую).",
+  "AbilitiesTopic": "Чем могу быть полезен",
+  "AbilitySiteLayout": "Верстка сайта",
+  "AbilityDevelopSite": "Разработка сайта",
+  "AbilitySiteLogic": "Помощь с логикой сайта",
+  "PortfolioTopic": "Мои работы",
+  "PortfolioEduCenter": "Сайт образовательного центра"
+}

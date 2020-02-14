@@ -1,23 +1,18 @@
 <template>
     <section class="intro">
         <div class="container">
-            <h2 class="subheading">Introduction (Давайте познакомимся)</h2>
+            <h2 class="subheading">{{ 'IntroTopic' | translateElement($lang) }}</h2>
             <div class="wrapper">
                 <figure class="user-image">
                     <img src="../assets/files/user.jpg" alt="Photo of my face">
                 </figure>
 
                 <section class="auth">
-                    <h3>About myself (Пара слов о себе)</h3>
+                    <h3>{{ 'IntroSubTopic' | translateElement($lang) }}</h3>
                     <p>
-                        I am a Web Developer. Programming is very excited me.
+                        {{ 'IntroAuth1' | translateElement($lang) }}
                         <br>
-                        Because computer programs can turn over whole world (and I want to develop one).
-                    </p>
-                    <p>
-                        Я веб-разработчик. Программирование очень взволновало меня.
-                        <br>
-                        Потому что компьютерные программы могут перевернуть весь мир (и я хочу разработать такую).
+                        {{ 'IntroAuth2' | translateElement($lang) }}
                     </p>
                 </section>
             </div>

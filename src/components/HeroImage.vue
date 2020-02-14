@@ -1,10 +1,8 @@
 <template>
     <section class="hero-image">
         <div class="container">
-            <h1 class="heading">
-                Sinilo Oleg (Олег Синило)
-            </h1>
-            <p>Full Stack Developer (Full Stack Разработчик)</p>
+            <h1 class="heading">{{ 'HeroImageMyName' | translateElement($lang) }}</h1>
+            <p>{{ 'HeroImageMyProfession' | translateElement($lang) }}</p>
         </div>
     </section>
 </template>

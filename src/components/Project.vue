@@ -1,7 +1,7 @@
 <template>
     <li>
         <figure class="project-item">
-            <figcaption>{{projectTitle}}</figcaption>
+            <figcaption>{{projectTitle | translateElement($lang)}}</figcaption>
             <img :src="projectImage" :alt="projectTitle">
             <a :href="projectLink" class="button" target="blank">Open</a>
         </figure>

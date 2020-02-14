@@ -1,7 +1,7 @@
 <template>
     <section class="portfolio">
         <div class="container">
-            <h2 class="subheading">My projects (мои работы)</h2>
+            <h2 class="subheading">{{ 'PortfolioTopic' | translateElement($lang) }}</h2>
             <ul class="projects">
                 <Project v-for="(project, index) in projects"
                          :key="index"
@@ -27,7 +27,7 @@
             return {
                 projects: [
                     {
-                        title: 'Site of Educational Center',
+                        title: 'PortfolioEduCenter',
                         image: require('@/assets/files/portfolio_centre.png'),
                         link_to: 'https://keecenter.herokuapp.com/news',
                     }

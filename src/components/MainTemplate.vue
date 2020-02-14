@@ -8,7 +8,7 @@
         <slot id="content"></slot>
         <footer class="page-footer">
             <div class="container">
-                <span>Буду рад Вам помочь. Мои контакти:</span>
+                <span>{{ 'FooterIntro' | translateElement($lang) }}</span>
                 <ul>
                     <li>
                         <a class="email" href="mailto:olegsinilo126@gmail.com">olegsinilo126@gmail.com</a>
@@ -47,16 +47,16 @@
     .page-footer a {
         position: relative;
 
-        margin-right: 3.5rem;
-        padding-bottom: 10px;
-        padding-top: 9px;
+        margin-right: 1.5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem
 
         font-weight: 500;
         color: inherit;
         text-decoration: none;
 
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: left center;
     }
 
     .page-header a:focus,
